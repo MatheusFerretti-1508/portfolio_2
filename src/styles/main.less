@@ -22,6 +22,9 @@ body {
 .container-content {
     margin-right: 80px;
     margin-left: 80px;
+    @media @breakpointMobile {
+        width: 430px;
+        }
 }
 
 
@@ -29,12 +32,11 @@ header {
     
     .container {
                 @media @breakpointMobile {
-                width: 600px;
+                width: 430px;
                 display: block;
+                justify-content: center;
                 align-items: center;
-                padding: 14px;
-                padding-left: 55px;
-                margin: 0;
+                margin: 0 auto;
         }
         display: flex;
         padding: 24px;
@@ -54,9 +56,9 @@ header {
             margin-left: 16px;
             font-size: #project-fs[tamanhoH1];
             @media @breakpointMobile {
-                margin: 0 auto;
+                margin: 0 auto 0 auto;
                 display: block;
-                margin-left: -20px;
+                margin-left: 5px;
                 }
             .corTextos
             
@@ -71,7 +73,7 @@ header {
         ul {
             @media @breakpointMobile {
                 display: flex;
-                margin-left: -20px;
+                margin-left: 0px;
                 }
             list-style: none;
 
