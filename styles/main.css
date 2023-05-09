@@ -43,10 +43,13 @@ header .container {
 }
 @media (max-width: 767px) {
   header .container {
+    max-width: 90vw;
+    width: 100%;
     display: block;
     align-items: center;
     padding: 14px;
     padding-left: 55px;
+    margin: 0;
   }
 }
 header .container .pfp {
@@ -63,8 +66,9 @@ header .container h1 {
 }
 @media (max-width: 767px) {
   header .container h1 {
-    padding-left: 40px;
-    margin-bottom: 12px;
+    margin: 0 auto;
+    display: block;
+    margin-left: -20px;
   }
 }
 header .container img {
@@ -75,9 +79,20 @@ header .container img {
 header .container ul {
   list-style: none;
 }
+@media (max-width: 767px) {
+  header .container ul {
+    display: flex;
+    margin-left: -20px;
+  }
+}
 header .container ul li {
   display: inline;
   padding: 24px;
+}
+@media (max-width: 767px) {
+  header .container ul li {
+    padding: 8px;
+  }
 }
 header .container ul li a {
   background-image: linear-gradient(to bottom, #001aff, #5d06ce, #1e034b);
@@ -90,6 +105,7 @@ header .container ul li a {
 @media (max-width: 767px) {
   header .container ul li a {
     font-size: 15px;
+    display: inline;
   }
 }
 header .container ul li a:hover {

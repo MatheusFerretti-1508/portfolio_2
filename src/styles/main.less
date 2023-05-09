@@ -28,6 +28,15 @@ body {
 header {
     
     .container {
+                @media @breakpointMobile {
+                max-width: 90vw;
+                width: 100%;
+                display: block;
+                align-items: center;
+                padding: 14px;
+                padding-left: 55px;
+                margin: 0;
+        }
         display: flex;
         padding: 24px;
         padding-left: 80px;
@@ -35,12 +44,7 @@ header {
         align-items: center;
         justify-content: space-between;
         background-color: #project-colors[corHeaderFundo];
-        @media @breakpointMobile {
-            display: block;
-            align-items: center;
-            padding: 14px;
-            padding-left: 55px;
-        }
+
 
         .pfp {
             display: flex;
@@ -51,8 +55,9 @@ header {
             margin-left: 16px;
             font-size: #project-fs[tamanhoH1];
             @media @breakpointMobile {
-                padding-left: 40px;
-                margin-bottom: 12px;
+                margin: 0 auto;
+                display: block;
+                margin-left: -20px;
                 }
             .corTextos
             
@@ -65,20 +70,29 @@ header {
         }
 
         ul {
+            @media @breakpointMobile {
+                display: flex;
+                margin-left: -20px;
+                }
             list-style: none;
 
 
             li {
                 display: inline;
                 padding: 24px;
+                @media @breakpointMobile {
+                    padding: 8px;
+                    }
                 
                 a {
+                    @media @breakpointMobile {
+                        font-size: 15px;
+                        display: inline;
+                        }
                     .corTextos;
                     text-decoration: none;
                     font-size: #project-fs[tamanhoA];
-                    @media @breakpointMobile {
-                        font-size: 15px;
-                        }
+
                     
 
                     &:hover {
