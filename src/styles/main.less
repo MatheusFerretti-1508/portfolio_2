@@ -1,0 +1,355 @@
+@import 'reset.less';
+@import 'maps.less';
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)";
+
+.corTextos {
+    background-image: linear-gradient(to bottom, rgb(0, 26, 255), rgb(93, 6, 206), rgb(30, 3, 75));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #project-colors[corFundo];
+}
+
+.flex {
+    display: flex;
+}
+
+.container-content {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+
+header {
+    
+    .container {
+        display: flex;
+        padding: 24px;
+        padding-left: 80px;
+        padding-right: 75px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #project-colors[corHeaderFundo];
+        @media @breakpointMobile {
+            display: block;
+            align-items: center;
+            padding: 14px;
+            padding-left: 55px;
+        }
+
+        .pfp {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            margin-left: 16px;
+            font-size: #project-fs[tamanhoH1];
+            @media @breakpointMobile {
+                padding-left: 40px;
+                margin-bottom: 12px;
+                }
+            .corTextos
+            
+        }
+
+        img {
+            max-height: 80px;
+            max-width: 80px;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+
+
+            li {
+                display: inline;
+                padding: 24px;
+                
+                a {
+                    .corTextos;
+                    text-decoration: none;
+                    font-size: #project-fs[tamanhoA];
+                    @media @breakpointMobile {
+                        font-size: 15px;
+                        }
+                    
+
+                    &:hover {
+                        background-image: linear-gradient(to bottom, rgb(71, 6, 223), rgb(177, 6, 148), rgb(124, 6, 61));
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.sobre-mim {
+    margin-bottom: 48px;
+
+    .container-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin-top: 40px;
+        @media @breakpointMobile {
+            width: 90%;
+            display: block;
+            }
+
+        main {
+            width: 40%;
+            @media @breakpointMobile {
+                display: block
+                }
+        }
+
+        aside {
+            width: 60%;
+            @media @breakpointMobile {
+                display: block;
+                }
+
+        }
+        
+        h2 {
+            font-size: 48px;
+            margin: 0 auto 20px;
+            text-align: left;
+            
+        }
+        p {
+            margin-bottom: 8px;
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+
+
+    .container-me {
+        max-width: 40%;
+        width: 100%;
+        // margin: 40px auto; 
+        // margin-left: 240px;
+        margin-top: 40px;
+        margin-right: -10px;
+
+        img {
+            height: 400px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid rgb(98, 0, 255);
+            border-right: 3px solid rgb(98, 0, 255);
+            
+        }
+    }
+}
+
+.container-conhecimentos {
+    @media @breakpointMobile {
+        max-width: 100%;
+        }
+    width: 100%;
+    margin-bottom: 8px;
+
+    .conhecimentos {
+
+        .conhecimentos__titulo {
+            @media @breakpointMobile {
+                font-size: 28px;
+                width: 100%;
+                margin: 0 auto 0 auto;
+                }
+            display: flex;
+            justify-content: center;
+            font-size: #project-fs[tamanhoH2];
+            margin-bottom: 24px;
+        }
+        .conhecimentos__itens__2 {
+            display: block;
+
+            ul {
+                @media @breakpointMobile {
+                    display: block;
+                    margin-left: 100px;
+                    }
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    @media @breakpointMobile {
+                        font-size: 20px;
+                        padding: 4px;
+                        }
+                    font-size: 20px;
+                    padding: 8px;
+                    margin-bottom: 40px;
+                }
+
+                .nodejs {
+                    color: #3C873A;
+                }
+                .gulp {
+                    color: #DB4446;
+                    margin-left: 40px;
+                    @media @breakpointMobile {
+                        margin-left: 0;
+                        }
+                }
+                .grunt {
+                    color: #64461e ;
+                }
+                .Bootstrap {
+                    color: #563d7c;
+                }
+                .github {
+                    color: #211F1F;
+                }
+                .bem {
+                    color: #2965f1;
+                }
+            }
+        }
+
+        .conhecimentos__itens {
+            display: block;
+            
+            ul {
+                @media @breakpointMobile {
+                    display: block;
+                    margin-left: 100px;
+                    margin-top: 24px;
+                    }
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    @media @breakpointMobile {
+                        font-size: 20px;
+                        padding: 4px;
+                        }
+                    font-size: 20px;
+                    padding: 8px;
+                    margin-bottom: 40px;
+                }
+                .js {
+                    color: #e9d136;
+                }
+                .html {
+                    color: #FC6A03;
+                }
+                .css {
+                    color: #3C99DC;
+                }
+                .sass {
+                    color: #CD6799;
+                    /*@media @breakpointMobile {
+                        margin-left: -28px;
+                        }*/
+                }
+                .less {
+                    color: #087cc4;
+                }
+                .jquery {
+                    color: #0868AC;
+                }
+            }
+        }
+        }
+    }
+
+    .container-projetos {
+        width: 100%;
+        @media @breakpointMobile {
+            max-width: 100%;
+            }
+
+        .projetos__titulo {
+            @media @breakpointMobile {
+                font-size: 30px;
+                margin-right: -32px;
+                margin-bottom: 24px;
+                }
+            display: flex;
+            justify-content: center;
+            font-size: #project-fs[tamanhoH2];
+        }
+
+        .projetos__lista {
+            @media @breakpointMobile {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            margin-top: 24px;
+            
+
+            &__item {
+                @media @breakpointMobile {
+                    display: block;
+                    max-width: 350px;
+                    margin: 0 auto 0 auto;
+                    margin-bottom: 48px;
+                    }
+                margin: 0 auto 0 auto;
+                max-width: 500px;
+                margin-bottom: 48px;
+
+                &__img {
+                    img {
+                        @media @breakpointMobile {
+                            width: 350px;
+                            }
+                        width: 500px;
+                        height: 250px;
+                    }
+                }
+                &__titulo {
+                    font-size: #project-fs[tamanhoTituloProjeto];
+                    margin-bottom: 8px;
+                }
+                &__descricao {
+                    font-size: #project-fs[tamanhoDescricao];
+                    margin-bottom: 20px;
+                    text-align: justify;
+                }
+                &__link {
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 8px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        margin: 0 auto 0 auto;
+                        background-image: linear-gradient(to bottom, rgb(0, 26, 255), rgb(93, 6, 206), rgb(30, 3, 75));
+                        border-radius: 20px;
+
+                        &:hover {
+                            background-image: linear-gradient(to bottom, rgb(71, 6, 223), rgb(177, 6, 148), rgb(124, 6, 61));
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
