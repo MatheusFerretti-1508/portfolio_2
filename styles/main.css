@@ -43,8 +43,7 @@ header .container {
 }
 @media (max-width: 767px) {
   header .container {
-    max-width: 90vw;
-    width: 100%;
+    width: 600px;
     display: block;
     align-items: center;
     padding: 14px;
