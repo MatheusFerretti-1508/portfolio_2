@@ -34,7 +34,7 @@ body {
 }
 @media (max-width: 767px) {
   .container-content {
-    width: 375px;
+    width: 430px;
     margin: 0;
   }
 }
