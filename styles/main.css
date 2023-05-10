@@ -49,7 +49,7 @@ header .container {
 }
 @media (max-width: 767px) {
   header .container {
-    width: 390px;
+    width: 440px;
     display: block;
     justify-content: center;
     align-items: center;
