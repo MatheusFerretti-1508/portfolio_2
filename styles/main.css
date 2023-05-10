@@ -34,7 +34,7 @@ body {
 }
 @media (max-width: 767px) {
   .container-content {
-    width: 440px;
+    width: 375px;
     margin: 0;
   }
 }
@@ -49,7 +49,7 @@ header .container {
 }
 @media (max-width: 767px) {
   header .container {
-    width: 472px;
+    width: 375px;
     display: block;
     justify-content: center;
     align-items: center;
