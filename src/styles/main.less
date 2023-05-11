@@ -10,9 +10,19 @@
     -webkit-text-fill-color: transparent;
 }
 
+html {
+    @media @breakpointMobile {
+        width: 430px;
+    }
+}
+
 body {
+    @media @breakpointMobile {
+        width: 430px;
+    }
     font-family: 'Poppins', sans-serif;
     background-color: #project-colors[corFundo];
+
 }
 
 .flex {
@@ -297,7 +307,7 @@ header {
         .projetos__titulo {
             @media @breakpointMobile {
                 font-size: 30px;
-                margin-right: -32px;
+                margin-right: -20px;
                 margin-bottom: 24px;
                 }
             display: flex;

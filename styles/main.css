@@ -21,9 +21,19 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 767px) {
+  html {
+    width: 430px;
+  }
+}
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f6fa;
+}
+@media (max-width: 767px) {
+  body {
+    width: 430px;
+  }
 }
 .flex {
   display: flex;
@@ -307,7 +317,7 @@ header .container ul li a:hover {
 @media (max-width: 767px) {
   .container-projetos .projetos__titulo {
     font-size: 30px;
-    margin-right: -32px;
+    margin-right: -20px;
     margin-bottom: 24px;
   }
 }
