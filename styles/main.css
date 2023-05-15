@@ -143,6 +143,7 @@ header .container ul li a:hover {
   }
   .sobre-mim-mobile .container-info p {
     margin-right: 20px;
+    text-align: justify;
   }
   .sobre-mim-mobile .container-info img {
     height: 200px;
