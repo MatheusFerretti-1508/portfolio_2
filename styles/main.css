@@ -129,16 +129,22 @@ header .container ul li a:hover {
   -webkit-text-fill-color: transparent;
 }
 .sobre-mim-mobile {
-  width: 100vw;
-  margin: 0 auto;
+  display: none;
 }
-.sobre-mim-mobile .container-info {
-  max-width: 100vw;
-  margin-left: 25px;
-}
-.sobre-mim-mobile .container-info img {
-  height: 200px;
-  margin: 0 auto 0 auto;
+@media (max-width: 767px) {
+  .sobre-mim-mobile {
+    display: contents;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .sobre-mim-mobile .container-info {
+    max-width: 100vw;
+    margin-left: 25px;
+  }
+  .sobre-mim-mobile .container-info img {
+    height: 200px;
+    margin: 0 auto 0 auto;
+  }
 }
 .sobre-mim {
   margin-bottom: 48px;
